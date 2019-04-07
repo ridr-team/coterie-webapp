@@ -1,29 +1,82 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
-
+import { NavLink, Link } from "react-router-dom";
+import '../../PageLayout.scss'
 class Header extends Component {
 
   render() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-          <Link className="navbar-brand" to="/home">Coterie</Link>
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mr-auto">
-              <li className="nav-item active">
-                <Link className="nav-link" to="/groups">Groups <span className="sr-only">(current)</span></Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/tasks">Tasks</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/profile">Profile</Link>
-              </li>
-            </ul>
-          </div>
-        </nav>
+      <div className='wrapper text-center'>
+  <nav className='navbar navbar-expand-lg navbar-light test navbar-toggleable-md'>
+    <ul className='navbar-nav mr-auto'>
+      <li className='nav-item'>
+        <a>
+          <NavLink to='/#' className='logo' href='#'>
+            coterie
+          </NavLink>
+        </a>
+      </li>
+  </ul>
+      { /*<li className='nav-item'>
+        <a className='nav-link' href='#'>
+          <Link to='/counter'>
+            Counter
+          </Link>
+        </a>
+      </li>
+      <li className='nav-item'>
+        <a className='nav-link disabled' href='#'>
+          <Link to='/groups'>
+            Groups
+          </Link>
+        </a>
+      </li>
+      <li className='nav-item'>
+        <a className='nav-link' href='#'>
+          <Link to='/tasks'>
+            Tasks
+          </Link>
+        </a>
+      </li>
+      <li className='nav-item'>
+        <a className='nav-link' href='#'>
+          <Link to='/chat'>
+            Chat
+          </Link>
+        </a>
+      </li>*/}
+
+      <ul className='navbar-nav pull-right linkTest'>
+          <li className='nav-item'>
+              <a className='nav-link' href='#features'>
+                  <Link>
+                      Features
+                  </Link>
+              </a>
+          </li>
+          <li className='nav-item'>
+              <a className='nav-link' href='#team'>
+                  <Link>
+                      Team
+                  </Link>
+              </a>
+          </li>
+          {/*   <li className='nav-item'>
+        <a className='nav-link' href='#'>
+          <Link to='/users/login'>
+            Login
+          </Link>
+        </a>
+      </li>
+      <li className='nav-item linkTest'>
+        <a className='nav-link' href='#'>
+          <Link to='/users/signup'>
+            Signup
+          </Link>
+        </a>
+      </li>*/}
+    </ul>
+  </nav>
+</div>
     )
   }
 

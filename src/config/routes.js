@@ -1,8 +1,13 @@
+import HomeView from '../components/LandingPage/HomeView'
 import Groups from '../components/Group/Groups'
 import Tasks from '../components/Task/Tasks'
 import Profile from '../components/Profile/Profile'
 
 const routes = [
+  {
+    path: '/',
+    component: HomeView
+  },
   {
     path: '/groups',
     component: Groups
@@ -15,6 +20,7 @@ const routes = [
     path: '/profile',
     component: Profile
   }
+
 ]
 
 export default routes;
