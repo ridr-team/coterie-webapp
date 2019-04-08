@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
-
+import '../../HomeView.scss'
 class Footer extends Component {
 
   render() {
     return (
-      <footer className="container">
+      <footer className="footer main">
         <div className="row">
-          <div className="col-12 col-md">
-            <h1>Coterie</h1>
-            <small className="d-block mb-3 text-muted">© 2017-2019</small>
-          </div>
           <div className="col-6 col-md">
             <h5>Features</h5>
             <ul className="list-unstyled text-small">
@@ -47,8 +43,19 @@ class Footer extends Component {
               <li><a className="text-muted" href="#">Terms</a></li>
             </ul>
           </div>
-        </div>
+          </div>
+          <section>
+              <p className="footer-copyright">© 2017 Coterie, Inc.</p>
+              <div className="footerImage">
+                  <a href="/">
+              <img src={require('../LandingPage/assets/logo.png')}/>
+                      </a>
+                  </div>
+          </section>
+
+
       </footer>
+
     )
   }
 }
