@@ -5,7 +5,7 @@ import Profile from '../components/Profile/Profile'
 
 const routes = [
   {
-    path: '/',
+    path: '/home',
     component: HomeView
   },
   {
