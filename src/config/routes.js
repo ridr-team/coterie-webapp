@@ -20,7 +20,6 @@ const routes = [
     path: '/profile',
     component: Profile
   }
-
 ]
 
 export default routes;

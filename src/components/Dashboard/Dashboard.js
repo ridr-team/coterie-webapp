@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
 //Components
-import Header from '../Header/Header';
+//import Header from '../Header/Header';
+import Header from '../LandingPage/UnloggedHeader';
 import Footer from '../Footer/Footer';
 import ComponentRouter from '../Router/ComponentRouter';
 
